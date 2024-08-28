@@ -1,18 +1,18 @@
 ## Build
 
-```bash
+```
 $ yarn setup --clean
 
 ```
 
 ## Run
 
-```bash
+```
 $ yarn android --device
 ```
 
 or
 
-```bash
+```
 $ yarn ios --device
 ```
