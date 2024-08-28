@@ -12,16 +12,32 @@
       "backgroundColor": "#ffffff"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.timmyjose.cfmetricsmaster"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.timmyjose.cfmetricsmaster"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-build-properties"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "3981e2d5-ca50-4c9c-9956-e873d4ffbc71"
+      }
+    },
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/3981e2d5-ca50-4c9c-9956-e873d4ffbc71"
     }
   }
 }
