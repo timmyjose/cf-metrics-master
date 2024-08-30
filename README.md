@@ -1,3 +1,6 @@
+Prove and verify `GitHUb` handle using https://www.npmjs.com/package/@reclaimprotocol/reactnative-sdk
+
+
 # Setup
 
 Expects an `.env.local` file in the project root:
