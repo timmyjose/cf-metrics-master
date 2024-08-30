@@ -25,7 +25,8 @@
             {
               "scheme": "cfmm"
             }
-          ]
+          ],
+          "category": ["BROWSABLE", "DEFAULT"]
         }
       ],
       "adaptiveIcon": {

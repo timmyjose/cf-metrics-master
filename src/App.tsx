@@ -12,7 +12,6 @@ const prefix = Linking.createURL('/')
 export type RootStackParamsList = {
   Home: undefined
   Demo: undefined
-  PostReclaim: undefined
 }
 
 const Stack = createNativeStackNavigator<RootStackParamsList>()
