@@ -12,9 +12,12 @@ const Demo = () => {
   const reclaimClient = new Reclaim.ProofRequest(RECLAIM_APP_ID)
   const APP_SECRET = RECLAIM_SECRET
 
+  console.log(`app id = ${RECLAIM_APP_ID}`)
+  console.log(`secret = ${RECLAIM_SECRET}`)
+
   async function startVerificationFlow() {
     const providerIds = [
-        'fa461d99-0ccb-4db4-9c4e-792ce4d89fa3', // CF Stats
+      '6d3f6753-7ee6-49ee-a545-62f1b1822ae5', // GitHub UserName
       ];
     
     const appDeepLink = RECLAIM_DEEPLINK_URL
@@ -26,7 +29,11 @@ const Demo = () => {
       ("add a message")
     )
  
-    await reclaimClient.buildProofRequest(providerIds[0])
+    try {
+      await reclaimClient.buildProofRequest(providerIds[0])
+    } catch (err: any) {
+      Alert.alert(`Proof error: ${err}`)
+    }
  
     reclaimClient.setSignature(
       await reclaimClient.generateSignature(APP_SECRET)
