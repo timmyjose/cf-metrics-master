@@ -21,7 +21,9 @@ const App = () => {
     prefixes: [prefix, 'cfmm://', 'cfmm:'],
     config: {
       screens: {
-        Demo: 'demo'
+        Demo: {
+          path: 'demo/'
+        }
       }
     }
   }
